@@ -1,0 +1,7 @@
+.container-upload, .btn-download-cropper {
+    padding: 50px 0 50px;
+    border: 1px solid rgb(65, 65, 65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

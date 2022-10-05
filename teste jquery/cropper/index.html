@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js" integrity="sha512-ooSWpxJsiXe6t4+PPjCgYmVfr1NS5QXJACcR/FPpsdm6kqG1FmQ2SVyg2RXeVuCRBLr0lWHnWJP6Zs1Efvxzww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./css/cropper.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <div class="container-upload">
+        <input id="img-input" type="file">
+        <div id="img-container">
+            <img id="preview" src="">
+        </div>
+    </div>
+
+    <p>Cropper Container:</p>
+    <div id="container-crop">
+        <img id="image-cropper" src="">
+    </div>
+    <br>
+
+    <div>
+        <button id="change-image-cropper">Atualizar Foto</button>
+        <button type="button" id="generate-crop">Gerar Crop</button>
+    </div>
+
+    <div>
+        <p>Resultado Cropper: </p>
+        <div>
+            <div id="result-crop"></div>
+        </div>
+    </div>
+    <br>
+
+    <div class="btn-download-cropper">
+        <div>Botão de download da Foto:</div>
+           <button
+                type="button"
+                id="btn-dowload"
+                onclick="downloadPhoto()"
+            >
+                Baixar Crop
+            </button>
+    </div>
+
+    <script src="./js/base64img.js"></script>
+    <script src="./js/uploadPhoto.js"></script>
+    <script src="./js/downloadPhoto.js"></script>
+    <script src="./js/crooper.js"></script>
+
+</script>
+</body>
+</html>
